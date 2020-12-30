@@ -1,0 +1,12 @@
+dist/
+node_modules/
+server/
+test/
+db/
+*.woff
+*.ico
+*.png
+*.mdx
+*.svg
+*.jpg
+.history
