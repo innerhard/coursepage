@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Typography from '@material-ui/core/Typography'
 
 interface IProp {
     img: string
@@ -6,14 +7,18 @@ interface IProp {
 const WrapperCard = styled.div<IProp>`
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
-    min-height: 200px;
-    align-items: center;
+    grid-template-rows: 200px 1fr 1fr;
+    min-height: 450px;
+    align-items: start;
     background-image: ${({ img }) => `url(${img})`};
     background-repeat: no-repeat;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(24deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-size: cover;
+    padding: 40px;
+`
+const WrapperText = styled(Typography)`
+    color: #ffffff;
 `
 export const Styled = {
     WrapperCard,
+    WrapperText,
 }

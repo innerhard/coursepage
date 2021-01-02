@@ -10,7 +10,7 @@ export const MainPage = () => {
         <>
             <NavigationDesktop {...MenuMock} />
             <Banner
-                img="https://cdn.dribbble.com/users/255/screenshots/9536611/media/095b710681fef2f75c6768831b6587a0.jpg?compress=1&resize=400x300"
+                img="https://asiamountains.net/upload/slide/slide-1960x857-07.jpg"
                 title="title в карте"
                 description="awdawdawdaw"
             />
