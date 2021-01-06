@@ -3,18 +3,27 @@ import styled from 'styled-components'
 interface IProp {
     img: string
 }
-const WrapperCard = styled.div<IProp>`
+const WrapperCard = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
     min-height: 200px;
     align-items: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 4px 4px 34px 0px rgba(34, 60, 80, 0.2);
+`
+const WrapperImg = styled.div<IProp>`
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: 350px;
     background-image: ${({ img }) => `url(${img})`};
     background-repeat: no-repeat;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(24deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    border-radius: 24px;
+    background-position: center;
+    border-radius: 16px;
 `
 export const Styled = {
     WrapperCard,
+    WrapperImg,
 }
